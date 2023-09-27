@@ -17,8 +17,8 @@
 <!--Image for background was taken from: https://unsplash.com/photos/Joo3UBw789Q-->
 <body style="background-image: url(unsplash-background-image.jpg); background-repeat: no-repeat;">
     <center><h1 class="font">HCI Assignment-2</h1></center>
-    <center><div style="border-color: rgb(70, 70, 70); border: solid; background-color: rgb(80, 80, 80); height: 80%; width: 50%;">
-        <form>
+    <center><div style="border-color: rgb(70, 70, 70); border: solid; background-color: rgb(80, 80, 80); height: 80.2%; width: 50%;">
+        <fieldset><form>
             <table>
                 <tr>
                     <th></th>
@@ -55,7 +55,11 @@
                         <label for="gender-male" class="form-font"><b>Male</b></label>
                         <input type="radio" name="gender" id="gender-male" required>
                     </td>
-                    <td><center><h1 class="form-font">Gender*</h1></center></td>
+                    <td rowspan="2"><center><h1 class="form-font">Gender*</h1>
+                    <br>
+                    <label for="birthday" class="form-font"><b>Date of birth*:</b></label>
+                        <input type="date" name="birthday" id="birthday" required>
+                    </center></td>
                     <td>
                         <br>
                         <br>
@@ -66,32 +70,18 @@
                     </td>
                 </tr>
                 <tr>
-                    <!--Not Used-->
-                    <td></td>
-                    <!--/Not Used-->
-                    <td>
+                    <td colspan="2">
                         <br>
                         <br>
-                        <label for="birthday" class="form-font"><b>Date of birth*:</b></label>
-                        <input type="date" name="birthday" id="birthday" required>
-                    </td>
-                    <!--Not Used-->
-                    <td></td>
-                    <!--/Not Used-->
-                </tr>
-                <tr>
-                    <td>
+                        <br>
+                        <br>
                         <br>
                         <br>
                         <br>
                         <label for="checkbox-terms" class="form-font"><b>I have read the TOS*.</b></label>
                         <input type="checkbox" name="checkbox" id="checkbox-email" required>
-                    </td>
-                    <td>
                         <br>
-                        <br>
-                        <br>
-                        <label for="checkbox-email" class="form-font"><b>I would like to recive emails.</b></label>
+                        <label for="checkbox-email" class="form-font"><b>I would like update emails.</b></label>
                         <input type="checkbox" name="checkbox" id="checkbox-email">
                     </td>
                 </tr>
@@ -107,7 +97,7 @@
                     </td>
                 </tr>
             </table>
-        </form>
+        </form></fieldset>
     </div></center>
 </body>
 </html>
